@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Blake Cary's portfolio for IT, web, hardware, open-source, and local AI projects."
+    >
+    <title>Blake Cary | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Blake Cary home">
+          <span class="brand-mark" aria-hidden="true">BC</span>
+          <span>Blake Cary</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#featured-project">Featured Project</a>
+          <a href="#currently-building">Currently Building</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section hero" id="home" aria-labelledby="home-title">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">High School IT Student &amp; Developer</p>
+            <h1 id="home-title">Blake Cary</h1>
+            <p class="hero-text">
+              I build practical tools, experiment with local AI, and work on projects involving
+              computer hardware, web design, and open-source software.
+            </p>
+            <div class="button-row" aria-label="Main links">
+              <a class="button button-primary" href="assets/resume.pdf">View Resume</a>
+              <a class="button" href="https://github.com/BlakeC2010">View GitHub</a>
+              <a class="button" href="#featured-project">View Projects</a>
+            </div>
+          </div>
+
+          <article class="hero-project-card" aria-labelledby="hero-project-title">
+            <p class="card-kicker">Featured Project</p>
+            <h2 id="hero-project-title">Context Titles</h2>
+            <p class="project-type">Obsidian community plugin</p>
+            <p>
+              Improves duplicate note labels in Graph View by adding useful folder context while
+              leaving real files and note contents untouched.
+            </p>
+            <ul class="project-proof-list">
+              <li>Published on GitHub</li>
+              <li>Passed Obsidian community review</li>
+              <li>Does not rename files or edit note contents</li>
+            </ul>
+            <a class="button button-card" href="https://github.com/BlakeC2010/context-titles">
+              View Context Titles
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">I like building tools that connect to real work.</h2>
+            <p>
+              I am a high school IT student interested in computer hardware, troubleshooting,
+              web design, AI tools, and open-source software. I like building practical projects
+              that solve real problems, especially tools that connect to how I actually work and
+              learn.
+            </p>
+            <p>
+              I am proud to be a young Black student in tech, and I want to keep building real
+              projects that show what I can do.
+            </p>
+          </div>
+
+          <div class="stacked-lists">
+            <div class="list-block">
+              <h3>Skills &amp; Interests</h3>
+              <ul class="tag-list">
+                <li>Computer hardware troubleshooting</li>
+                <li>Windows and PC setup</li>
+                <li>HTML and CSS</li>
+                <li>GitHub</li>
+                <li>TypeScript basics</li>
+                <li>Local AI tools</li>
+                <li>Obsidian plugins</li>
+                <li>Open-source projects</li>
+              </ul>
+            </div>
+
+            <div class="list-block">
+              <h3>Certifications</h3>
+              <ul class="clean-list">
+                <li>CompTIA Tech+</li>
+                <li>OSHA 10-Hour General Industry - CareerSafe</li>
+                <li>CyberSafety - CareerSafe</li>
+                <li>Interview Skills - CareerSafe</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band" id="featured-project" aria-labelledby="featured-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Project</p>
+            <h2 id="featured-title">Context Titles</h2>
+            <p>
+              Context Titles is an Obsidian community plugin that makes duplicate note names
+              easier to understand in Graph View by adding folder context to repeated labels.
+            </p>
+          </div>
+
+          <div class="project-layout">
+            <article class="project-card">
+              <span class="status-pill">Finished and published</span>
+              <h3>What it is</h3>
+              <p>
+                Context Titles adds folder context to repeated note labels in Graph View and
+                Local Graph so duplicate files are easier to understand at a glance.
+              </p>
+              <h3>Why it matters</h3>
+              <p>
+                In Obsidian, repeated notes like <code>Overview.md</code>, <code>Tasks.md</code>,
+                and <code>Research.md</code> can be confusing in Graph View because they all look
+                the same. Context Titles helps by showing labels like
+                <code>Hardware Notes - Research</code> or
+                <code>Portfolio Website - Overview</code>.
+              </p>
+              <p>
+                The real files are not renamed, and the plugin does not edit note contents. It
+                only changes how duplicate note names appear in graph labels.
+              </p>
+              <a class="button button-primary" href="https://github.com/BlakeC2010/context-titles">
+                View GitHub Repo
+              </a>
+            </article>
+
+            <div class="built-column">
+              <h3>What I built</h3>
+              <div class="feature-list" aria-label="What I built for Context Titles">
+                <div>
+                  <span>01</span>
+                  <p>Duplicate-only graph labels</p>
+                </div>
+                <div>
+                  <span>02</span>
+                  <p>Folder context for repeated note names</p>
+                </div>
+                <div>
+                  <span>03</span>
+                  <p>Custom separator settings</p>
+                </div>
+                <div>
+                  <span>04</span>
+                  <p>Include and exclude folder settings</p>
+                </div>
+                <div>
+                  <span>05</span>
+                  <p>Graph View and Local Graph support</p>
+                </div>
+                <div>
+                  <span>06</span>
+                  <p>GitHub release setup and documentation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="currently-building" aria-labelledby="building-title">
+        <div class="section-inner">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Currently Building</p>
+            <h2 id="building-title">Smaller projects and ideas in progress.</h2>
+            <p>
+              These are not being shown as finished work yet. I am keeping them smaller than
+              Context Titles until they have more complete repos or public previews.
+            </p>
+          </div>
+
+          <div class="building-grid">
+            <article class="building-card">
+              <span class="status-pill">In progress</span>
+              <h3>Zoro</h3>
+              <p>
+                A local AI voice assistant project for voice commands, opening apps, playing
+                music, speaking responses, and eventually connecting to local tools and memory.
+              </p>
+            </article>
+
+            <article class="building-card">
+              <span class="status-pill">Future idea</span>
+              <h3>OpenSync</h3>
+              <p>
+                A project idea I may build out later as part of my interest in practical tools
+                and open-source workflows.
+              </p>
+            </article>
+
+            <article class="building-card">
+              <span class="status-pill">Future idea</span>
+              <h3>Hermes Obsidian Sidebar</h3>
+              <p>
+                An Obsidian-related idea that may become a sidebar tool after the plan is more
+                complete.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band" id="resume" aria-labelledby="resume-title">
+        <div class="section-inner resume-row">
+          <div>
+            <p class="eyebrow">Resume</p>
+            <h2 id="resume-title">A quick look at my experience and certifications.</h2>
+            <p>
+              My resume is available as a PDF for applications, teachers, mentors, and anyone
+              reviewing my work.
+            </p>
+          </div>
+          <a class="button button-primary" href="assets/resume.pdf">Open Resume</a>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">The best way to contact me is through email or GitHub.</h2>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:blakecary2010@gmail.com">blakecary2010@gmail.com</a>
+            <a href="https://github.com/BlakeC2010">github.com/BlakeC2010</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Blake Cary. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+  </body>
+</html>
