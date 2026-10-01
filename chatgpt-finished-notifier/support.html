@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Support for ChatGPT Finished Notifier.">
+  <title>Support · ChatGPT Finished Notifier</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true"><span class="bell-dot"></span></span>
+        <span>ChatGPT Finished Notifier</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="https://github.com/BlakeC2010/ChatGPT-Finished-Notifier">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="article-page">
+      <div class="eyebrow">Support</div>
+      <h1>Help when something doesn't behave.</h1>
+      <p class="article-meta">ChatGPT Finished Notifier · v1.2.0</p>
+
+      <h2>No notification appears</h2>
+      <p>First check whether the ChatGPT tab was actually hidden when the response finished. The extension intentionally stays quiet while the ChatGPT tab is still visible, including when it remains visible on another monitor.</p>
+      <p>If you use System mode, make sure Chrome notifications are enabled in your operating system. On Windows 11, also check <strong>Settings → System → Notifications → Do not disturb</strong>. Windows can automatically enable Do Not Disturb during full-screen apps, gaming, display duplication, Focus sessions, or configured quiet hours.</p>
+
+      <h2>The custom browser toast does not appear</h2>
+      <p>Open the extension's options page and confirm that the notification mode is set to <strong>Auto</strong> or <strong>Browser Toast</strong>. Auto uses the custom toast while Chrome is the active application and falls back to a system notification when needed.</p>
+
+      <h2>I want to change notification mode</h2>
+      <p>Open Chrome's Extensions page, select ChatGPT Finished Notifier, then open the extension options. Choose Auto, Browser Toast, or System. Your preference is remembered by Chrome extension storage.</p>
+
+      <h2>The extension stopped detecting responses</h2>
+      <p>Refresh the ChatGPT tab after updating or reinstalling the extension. Chrome content scripts that were loaded before an extension update may continue using the older version until the page is refreshed.</p>
+
+      <h2>Service worker says “Inactive”</h2>
+      <p>That is normal for Manifest V3 Chrome extensions. Chrome suspends extension service workers while they are idle and wakes them again when an event needs to be handled. “Inactive” by itself does not mean the extension is broken.</p>
+
+      <h2>Report a bug</h2>
+      <p>If the steps above do not solve the problem, open an issue on GitHub. Include what notification mode you were using, your operating system, what you expected to happen, and what actually happened. Do not include private ChatGPT conversation content.</p>
+
+      <div class="support-grid">
+        <a class="support-card" href="https://github.com/BlakeC2010/ChatGPT-Finished-Notifier/issues"><strong>Report an issue</strong><span>Open a GitHub issue with the problem and reproduction steps.</span></a>
+        <a class="support-card" href="https://github.com/BlakeC2010/ChatGPT-Finished-Notifier"><strong>View source</strong><span>See releases, source code, and project history.</span></a>
+        <a class="support-card" href="privacy.html"><strong>Privacy policy</strong><span>See exactly what the extension stores and accesses.</span></a>
+        <a class="support-card" href="./"><strong>Extension home</strong><span>Return to the product overview.</span></a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>ChatGPT Finished Notifier</span>
+      <div><a href="./">Home</a><a href="privacy.html">Privacy</a></div>
+    </footer>
+  </div>
+</body>
+</html>
