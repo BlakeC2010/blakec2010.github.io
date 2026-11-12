@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f3">
+  <meta name="description" content="{{SITE_NAME}} — a high school IT student building software, exploring local AI, and learning by solving real problems.">
+  <meta property="og:title" content="{{SITE_NAME}} · Student Developer">
+  <meta property="og:description" content="From wanting to make games to building tools of my own. Selected projects, experience, and what I'm learning.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>{{SITE_NAME}} — Student Developer & Builder</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header" id="site-header">
+      <a href="#top" class="identity" aria-label="{{SITE_NAME}} home"><span class="identity-square">b<span>c</span></span><span class="identity-label">{{SITE_NAME}}</span></a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about">Story</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-right"><a class="nav-resume" href="assets/resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button></div>
+    </header>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-heading">
+        <div class="hero-topline"><span class="small-caps">{{HERO_KICKER}}</span><span class="coordinates">{{SITE_LOCATION}} <span aria-hidden="true">/</span> {{SITE_CLASS_YEAR}}</span></div>
+        <div class="hero-grid">
+          <div class="hero-copy"><p class="section-number">PORTFOLIO / 2026</p><h1 id="hero-heading">{{HERO_HEADLINE}}</h1><p class="hero-lede">{{HERO_INTRO}}</p>
+            <div class="hero-actions"><a class="button button-dark" href="#projects">See what I've built <span aria-hidden="true">↗</span></a><a class="inline-action" href="#about">Read my story <span aria-hidden="true">↓</span></a></div>
+          </div>
+          <div class="hero-art" aria-label="A visual overview of Blake's path from making games to building software"><div class="art-topbar"><span class="art-ring"></span><span>THE PATH SO FAR</span><span class="art-counter">01—03</span></div>
+            <div class="art-line art-line-one"><span class="art-step">01</span><span class="art-word">Games</span><span class="art-note">where it began</span></div>
+            <div class="art-connector" aria-hidden="true">↘</div>
+            <div class="art-line art-line-two"><span class="art-step">02</span><span class="art-word">Code</span><span class="art-note">learning the tools</span></div>
+            <div class="art-connector art-connector-second" aria-hidden="true">↘</div>
+            <div class="art-line art-line-three"><span class="art-step">03</span><span class="art-word">Build</span><span class="art-note">making things useful</span></div>
+            <div class="art-bottom"><span class="art-line-accent"></span><span>ALWAYS A WORK IN PROGRESS</span></div>
+          </div>
+        </div>
+        <div class="hero-footer"><span class="current-work"><span class="status-light" aria-hidden="true"></span>{{HERO_CURRENT}}</span><p>{{HERO_NOTE}}</p><a href="#about" aria-label="Scroll to story" class="scroll-down">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <section class="section section-about" id="about" aria-labelledby="about-heading">
+        <div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 01 / {{ABOUT_EYEBROW}}</div><h2 id="about-heading">{{ABOUT_TITLE}}</h2></div>
+        <div class="about-grid"><div class="about-statements reveal"><div class="about-oversize">01<span class="dot-accent">.</span></div><p class="about-pullquote">“{{ABOUT_QUOTE}}”</p><span class="about-signature">— Blake</span></div><div class="about-narrative reveal"><p>{{ABOUT_PARAGRAPH_1}}</p><p>{{ABOUT_PARAGRAPH_2}}</p></div></div>
+      </section>
+
+      <section class="section journey-section" aria-label="My path into technology"><div class="journey-heading"><span class="small-caps">A SHORT HISTORY</span><p>Not a straight line.<br>Just a lot of curiosity.</p></div><div class="journey-list">{{JOURNEY_ITEMS}}</div></section>
+
+      <section class="section section-projects" id="projects" aria-labelledby="projects-heading"><div class="section-intro projects-intro reveal"><div class="section-kicker"><span class="line-square"></span> 02 / {{PROJECTS_EYEBROW}}</div><div class="intro-split"><h2 id="projects-heading">{{PROJECTS_TITLE}}</h2><p>{{PROJECTS_INTRO}}</p></div></div>
+        <div class="projects-toolbar"><div class="filter-buttons" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button class="filter" data-filter="published" aria-pressed="false">Published <span>02</span></button><button class="filter" data-filter="development" aria-pressed="false">In progress <span>02</span></button></div><span class="toolbar-aside">SELECTED / 2023—2026</span></div>
+        <div class="project-grid" id="project-grid">{{PROJECT_CARDS}}</div>
+      </section>
+
+      <section class="section section-skills" id="skills" aria-labelledby="skills-heading"><div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 03 / {{SKILLS_EYEBROW}}</div><div class="intro-split"><h2 id="skills-heading">{{SKILLS_TITLE}}</h2><p>{{SKILLS_INTRO}}</p></div></div><div class="skills-list">{{SKILL_ROWS}}</div></section>
+
+      <section class="section section-leadership" id="leadership" aria-labelledby="leadership-heading"><div class="leadership-layout"><div class="leadership-left reveal"><div class="section-kicker"><span class="line-square"></span> 04 / {{LEADERSHIP_EYEBROW}}</div><h2 id="leadership-heading">{{LEADERSHIP_TITLE}}</h2><div class="leadership-caption">TECHNICAL SKILLS ARE MORE USEFUL WHEN SHARED.</div></div><div class="leadership-right reveal"><p class="leadership-main">{{LEADERSHIP_STORY}}</p><p>{{LEADERSHIP_FOLLOWUP}}</p><div class="volunteer-strip"><span aria-hidden="true">↗</span><p>{{LEADERSHIP_VOLUNTEER}}</p></div></div></div></section>
+
+      <section class="section section-awards" id="achievements" aria-labelledby="awards-heading"><div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 05 / {{AWARDS_EYEBROW}}</div><h2 id="awards-heading">{{AWARDS_TITLE}}</h2></div><div class="award-grid"><article class="award-card reveal"><div class="award-top"><span class="award-star" aria-hidden="true">✳</span><span>01 / RECOGNITION</span></div><h3>{{AWARD_1}}</h3><p>{{AWARD_1_META}}</p></article><article class="award-card reveal"><div class="award-top"><span class="award-star" aria-hidden="true">✳</span><span>02 / COMPETITION</span></div><h3>{{AWARD_2}}</h3><p>{{AWARD_2_META}}</p></article></div></section>
+
+      <section class="section section-certs" id="certifications" aria-labelledby="certs-heading"><div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 06 / {{CERT_EYEBROW}}</div><h2 id="certs-heading">{{CERT_TITLE}}</h2></div><div class="certification-grid"><div class="cert-box reveal"><div class="cert-box-top"><span>COMPLETED</span><span class="cert-count">04</span></div><ul>{{COMPLETED_CERTS}}</ul></div><div class="cert-box current-cert reveal"><div class="cert-box-top"><span>WORKING ON NOW</span><span class="cert-count">→</span></div><p>{{IN_PROGRESS_CERT}}</p><span class="current-label"><span class="status-light" aria-hidden="true"></span> IN PROGRESS · NOT YET CERTIFIED</span></div></div></section>
+
+      <section class="section goals-section" id="goals" aria-labelledby="goals-heading"><div class="goals-layout"><div class="reveal"><div class="section-kicker"><span class="line-square"></span> 07 / {{GOALS_EYEBROW}}</div><h2 id="goals-heading">{{GOALS_TITLE}}</h2></div><div class="goals-body reveal"><p>{{GOALS_INTRO}}</p><span>{{GOALS_NOTE}}</span></div></div></section>
+
+      <section class="section resume-section" id="resume" aria-labelledby="resume-heading"><div class="resume-block reveal"><div><div class="section-kicker"><span class="line-square"></span> 08 / {{RESUME_EYEBROW}}</div><h2 id="resume-heading">{{RESUME_TITLE}}</h2><p>{{RESUME_INTRO}}</p></div><a class="button button-light" href="assets/resume.pdf" target="_blank" rel="noopener">{{RESUME_BUTTON}} <span aria-hidden="true">↗</span></a></div></section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="contact-inner reveal"><div class="section-kicker"><span class="line-square"></span> 09 / {{CONTACT_EYEBROW}}</div><h2 id="contact-heading">{{CONTACT_TITLE}}</h2><p>{{CONTACT_INTRO}}</p><div class="contact-actions"><a class="button button-dark" href="{{SITE_EMAIL_HREF}}">{{CONTACT_EMAIL_BUTTON}} <span aria-hidden="true">↗</span></a><a href="{{SITE_GITHUB}}" class="inline-action" target="_blank" rel="noopener noreferrer">{{CONTACT_GITHUB_BUTTON}} <span aria-hidden="true">↗</span></a></div><div class="contact-address"><a href="{{SITE_EMAIL_HREF}}">{{SITE_EMAIL}}</a></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="footer-brand"><span class="identity-square">b<span>c</span></span><span>{{SITE_NAME}}<small>{{SITE_SCHOOL}} · {{SITE_CLASS_YEAR}}</small></span></div><p>Made to show the work, not just talk about it.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

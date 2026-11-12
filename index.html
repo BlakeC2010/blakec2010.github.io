@@ -1,321 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Blake Cary's portfolio for IT, web, hardware, open-source, and local AI projects."
-    >
-    <title>Blake Cary | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="Blake Cary home">
-          <span class="brand-mark" aria-hidden="true">BC</span>
-          <span>Blake Cary</span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-        </button>
-
-        <div class="nav-links" id="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#featured-project">Featured Project</a>
-          <a href="#currently-building">Currently Building</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f3">
+  <meta name="description" content="Blake Cary — a high school IT student building software, exploring local AI, and learning by solving real problems.">
+  <meta property="og:title" content="Blake Cary · Student Developer">
+  <meta property="og:description" content="From wanting to make games to building tools of my own. Selected projects, experience, and what I'm learning.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>Blake Cary — Student Developer & Builder</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header" id="site-header">
+      <a href="#top" class="identity" aria-label="Blake Cary home"><span class="identity-square">b<span>c</span></span><span class="identity-label">Blake Cary</span></a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about">Story</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <div class="nav-right"><a class="nav-resume" href="assets/resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button></div>
     </header>
-
     <main id="main">
-      <section class="section hero" id="home" aria-labelledby="home-title">
-        <div class="section-inner hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">High School IT Student &amp; Developer</p>
-            <h1 id="home-title">Blake Cary</h1>
-            <p class="hero-text">
-              I build practical tools, experiment with local AI, and work on projects involving
-              computer hardware, web design, and open-source software.
-            </p>
-            <div class="button-row" aria-label="Main links">
-              <a
-                class="button button-primary"
-                href="assets/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Resume
-              </a>
-              <a
-                class="button"
-                href="https://github.com/BlakeC2010"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View GitHub
-              </a>
-              <a class="button" href="#featured-project">View Projects</a>
-            </div>
+      <section class="hero" id="top" aria-labelledby="hero-heading">
+        <div class="hero-topline"><span class="small-caps">IT student · Developer · Problem solver</span><span class="coordinates">Grand Prairie, Texas <span aria-hidden="true">/</span> Class of 2029</span></div>
+        <div class="hero-grid">
+          <div class="hero-copy"><p class="section-number">PORTFOLIO / 2026</p><h1 id="hero-heading">I started by wanting to make games.<span class="hero-second">I kept building.</span></h1><p class="hero-lede">I&#x27;m Blake, a high school IT student who likes figuring out how things work — and making things that work better. These days I&#x27;m focused on AI, software, and the hardware it all runs on.</p>
+            <div class="hero-actions"><a class="button button-dark" href="#projects">See what I've built <span aria-hidden="true">↗</span></a><a class="inline-action" href="#about">Read my story <span aria-hidden="true">↓</span></a></div>
           </div>
-
-          <article class="hero-project-card" aria-labelledby="hero-project-title">
-            <p class="card-kicker">Featured Project</p>
-            <h2 id="hero-project-title">Context Titles</h2>
-            <p class="project-type">Obsidian community plugin</p>
-            <p>
-              Improves duplicate note labels in Graph View by adding useful folder context while
-              leaving real files and note contents untouched.
-            </p>
-            <ul class="project-proof-list">
-              <li>Published on GitHub</li>
-              <li>Passed Obsidian community review</li>
-              <li>Does not rename files or edit note contents</li>
-            </ul>
-            <a
-              class="button button-card"
-              href="https://community.obsidian.md/plugins/context-titles"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View on Obsidian
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="section-inner two-column">
-          <div>
-            <p class="eyebrow">About</p>
-            <h2 id="about-title">I like building tools that connect to real work.</h2>
-            <p>
-              I am a high school IT student interested in computer hardware, troubleshooting,
-              web design, AI tools, and open-source software. I like building practical projects
-              that solve real problems, especially tools that connect to how I actually work and
-              learn.
-            </p>
-            <p>
-              I am proud to be a young Black student in tech, and I want to keep building real
-              projects that show what I can do.
-            </p>
-          </div>
-
-          <div class="stacked-lists">
-            <div class="list-block">
-              <h3>Skills &amp; Interests</h3>
-              <ul class="tag-list">
-                <li>Computer hardware troubleshooting</li>
-                <li>Windows and PC setup</li>
-                <li>HTML and CSS</li>
-                <li>GitHub</li>
-                <li>TypeScript basics</li>
-                <li>Local AI tools</li>
-                <li>Obsidian plugins</li>
-                <li>Open-source projects</li>
-              </ul>
-            </div>
-
-            <div class="list-block">
-              <h3>Certifications</h3>
-              <ul class="clean-list">
-                <li>CompTIA Tech+</li>
-                <li>OSHA 10-Hour General Industry - CareerSafe</li>
-                <li>CyberSafety - CareerSafe</li>
-                <li>Interview Skills - CareerSafe</li>
-              </ul>
-            </div>
+          <div class="hero-art" aria-label="A visual overview of Blake's path from making games to building software"><div class="art-topbar"><span class="art-ring"></span><span>THE PATH SO FAR</span><span class="art-counter">01—03</span></div>
+            <div class="art-line art-line-one"><span class="art-step">01</span><span class="art-word">Games</span><span class="art-note">where it began</span></div>
+            <div class="art-connector" aria-hidden="true">↘</div>
+            <div class="art-line art-line-two"><span class="art-step">02</span><span class="art-word">Code</span><span class="art-note">learning the tools</span></div>
+            <div class="art-connector art-connector-second" aria-hidden="true">↘</div>
+            <div class="art-line art-line-three"><span class="art-step">03</span><span class="art-word">Build</span><span class="art-note">making things useful</span></div>
+            <div class="art-bottom"><span class="art-line-accent"></span><span>ALWAYS A WORK IN PROGRESS</span></div>
           </div>
         </div>
+        <div class="hero-footer"><span class="current-work"><span class="status-light" aria-hidden="true"></span>Currently learning: CompTIA A+ Core 1 &amp; Core 2</span><p>This is a look at what I&#x27;ve made, what I&#x27;ve learned, and what I&#x27;m still trying to figure out.</p><a href="#about" aria-label="Scroll to story" class="scroll-down">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
       </section>
 
-      <section class="section section-band" id="featured-project" aria-labelledby="featured-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Featured Project</p>
-            <h2 id="featured-title">Context Titles</h2>
-            <p>
-              Context Titles is an Obsidian community plugin that makes duplicate note names
-              easier to understand in Graph View by adding folder context to repeated labels.
-            </p>
-          </div>
+      <section class="section section-about" id="about" aria-labelledby="about-heading">
+        <div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 01 / Where it started</div><h2 id="about-heading">Curiosity turned into a habit.</h2></div>
+        <div class="about-grid"><div class="about-statements reveal"><div class="about-oversize">01<span class="dot-accent">.</span></div><p class="about-pullquote">“I want to build something that matters beyond my own computer.”</p><span class="about-signature">— Blake</span></div><div class="about-narrative reveal"><p>When I was eight or nine, I watched YouTubers build games and wanted to know how they did it. That led me to programming, then AI, then the idea of building applications and tools of my own. My interests kept changing, but the part I liked stayed the same: taking something I didn&#x27;t understand and working on it until I did.</p><p>I&#x27;m especially comfortable troubleshooting computers and working through software problems. I like projects that let me combine both sides of technology. I&#x27;ve learned that getting something running is one challenge; making it reliable enough to use regularly is another.</p></div></div>
+      </section>
 
-          <div class="project-layout">
-            <article class="project-card">
-              <span class="status-pill">Finished and published</span>
-              <h3>What it is</h3>
-              <p>
-                Context Titles adds folder context to repeated note labels in Graph View and
-                Local Graph so duplicate files are easier to understand at a glance.
-              </p>
-              <h3>Why it matters</h3>
-              <p>
-                In Obsidian, repeated notes like <code>Overview.md</code>, <code>Tasks.md</code>,
-                and <code>Research.md</code> can be confusing in Graph View because they all look
-                the same. Context Titles helps by showing labels like
-                <code>Hardware Notes - Research</code> or
-                <code>Portfolio Website - Overview</code>.
-              </p>
-              <p>
-                The real files are not renamed, and the plugin does not edit note contents. It
-                only changes how duplicate note names appear in graph labels.
-              </p>
-              <div class="button-row">
-                <a
-                  class="button button-primary"
-                  href="https://community.obsidian.md/plugins/context-titles"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View on Obsidian
-                </a>
-                <a
-                  class="button"
-                  href="https://github.com/BlakeC2010/context-titles"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View GitHub Repo
-                </a>
-              </div>
-            </article>
+      <section class="section journey-section" aria-label="My path into technology"><div class="journey-heading"><span class="small-caps">A SHORT HISTORY</span><p>Not a straight line.<br>Just a lot of curiosity.</p></div><div class="journey-list"><article class="journey-item reveal">
+          <div class="journey-index" aria-hidden="true">01</div>
+          <div class="journey-copy"><p class="mini-label">The spark</p>
+          <h3>Games were the starting point.</h3><p>Watching people make games online made me want to try creating something myself. I didn&#x27;t know much about programming yet, but I wanted to learn.</p></div>
+        </article>
+<article class="journey-item reveal">
+          <div class="journey-index" aria-hidden="true">02</div>
+          <div class="journey-copy"><p class="mini-label">Learning by doing</p>
+          <h3>Programming opened more doors.</h3><p>The more I learned, the less interested I was in following a single tutorial. I started experimenting with code, websites, and the way different tools fit together.</p></div>
+        </article>
+<article class="journey-item reveal">
+          <div class="journey-index" aria-hidden="true">03</div>
+          <div class="journey-copy"><p class="mini-label">A bigger challenge</p>
+          <h3>Then I started building Zoro.</h3><p>Around 2023 I began working on a voice assistant. What started as basic commands became a long-running project involving speech recognition, AI models, and desktop tools.</p></div>
+        </article>
+<article class="journey-item reveal">
+          <div class="journey-index" aria-hidden="true">04</div>
+          <div class="journey-copy"><p class="mini-label">Today</p>
+          <h3>From experiments to usable software.</h3><p>Now I spend more time on testing, troubleshooting, and making software work consistently. I&#x27;m still learning, but I&#x27;m more interested than ever in building tools people would actually choose to use.</p></div>
+        </article></div></section>
 
-            <div class="built-column">
-              <h3>What I built</h3>
-              <div class="feature-list" aria-label="What I built for Context Titles">
-                <div>
-                  <span>01</span>
-                  <p>Duplicate-only graph labels</p>
-                </div>
-                <div>
-                  <span>02</span>
-                  <p>Folder context for repeated note names</p>
-                </div>
-                <div>
-                  <span>03</span>
-                  <p>Custom separator settings</p>
-                </div>
-                <div>
-                  <span>04</span>
-                  <p>Include and exclude folder settings</p>
-                </div>
-                <div>
-                  <span>05</span>
-                  <p>Graph View and Local Graph support</p>
-                </div>
-                <div>
-                  <span>06</span>
-                  <p>GitHub release setup and documentation</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section class="section section-projects" id="projects" aria-labelledby="projects-heading"><div class="section-intro projects-intro reveal"><div class="section-kicker"><span class="line-square"></span> 02 / Selected work</div><div class="intro-split"><h2 id="projects-heading">Ideas that made it past the notebook.</h2><p>Some of these projects are public and available to explore. Others are still being developed. I want to show both the work I&#x27;ve released and the problems I&#x27;m still working through.</p></div></div>
+        <div class="projects-toolbar"><div class="filter-buttons" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button class="filter" data-filter="published" aria-pressed="false">Published <span>02</span></button><button class="filter" data-filter="development" aria-pressed="false">In progress <span>02</span></button></div><span class="toolbar-aside">SELECTED / 2023—2026</span></div>
+        <div class="project-grid" id="project-grid"><article class="project-card project-published reveal" data-kind="published">
+          <div class="project-meta"><span class="project-num">01 / SELECTED WORK</span><span class="project-status">Published / Open source</span></div>
+          <div class="project-art project-art-notes" aria-hidden="true">
+          <div class="notes-panel"><div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-title">graph / before</span></div><div class="note-line">● &nbsp; Overview</div><div class="note-line">● &nbsp; Overview</div></div>
+          <div class="notes-direction">→</div>
+          <div class="notes-panel notes-panel-after"><div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-title">graph / after</span></div><div class="note-line">● &nbsp; Alpha – Overview</div><div class="note-line">● &nbsp; Beta – Overview</div></div>
         </div>
+          <div class="project-body"><p class="project-type">An Obsidian community plugin</p><h3>Context Titles</h3>
+          <p class="project-description">I built Context Titles to solve a small but frustrating problem: when multiple notes have the same name, Obsidian&#x27;s Graph View can make them hard to tell apart. The plugin adds just enough folder context to distinguish them without renaming the actual files.</p><p class="project-detail">It supports Graph View and Local Graph, configurable label depth, folder rules, and live settings previews.</p>
+          <ul class="tech-tags"><li>TypeScript</li><li>Obsidian</li><li>GitHub Actions</li></ul>
+          <div class="project-footer"><a class="project-visit" href="https://github.com/BlakeC2010/context-titles" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+<article class="project-card project-published reveal" data-kind="published">
+          <div class="project-meta"><span class="project-num">02 / SELECTED WORK</span><span class="project-status">Published on GitHub</span></div>
+          <div class="project-art project-art-notify" aria-hidden="true"><div class="notify-window"><div class="notify-icon">↗</div><div><small>AI Chat Notifications</small><strong>Your response is ready.</strong><span>Return to conversation</span></div><i class="notify-time">now</i></div><div class="quiet-text">STAY FOCUSED. WE'LL LET YOU KNOW.</div></div>
+          <div class="project-body"><p class="project-type">A Chrome browser extension</p><h3>AI Chat Notifications</h3>
+          <p class="project-description">I wanted to know when an AI chat finished answering without having to watch the tab. This extension notifies me when a supported chat finishes while it&#x27;s hidden, then takes me back to the right conversation when I click.</p><p class="project-detail">It supports ChatGPT, Claude, and Gemini, with local notification settings and no external analytics.</p>
+          <ul class="tech-tags"><li>JavaScript</li><li>Chrome Extensions</li><li>DOM</li></ul>
+          <div class="project-footer"><a class="project-visit" href="https://github.com/BlakeC2010/ChatGPT-Finished-Notifier" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+<article class="project-card project-development reveal" data-kind="development">
+          <div class="project-meta"><span class="project-num">03 / SELECTED WORK</span><span class="project-status">Ongoing / Private development</span></div>
+          <div class="project-art project-art-zoro" aria-hidden="true"><div class="zoro-head"><span class="live-dot"></span> ZORO / LOCAL ASSISTANT <span class="zoro-sep">●</span> IN DEVELOPMENT</div><div class="soundwave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="zoro-flow"><span>Listen</span><b>→</b><span>Understand</span><b>→</b><span>Act</span></div></div>
+          <div class="project-body"><p class="project-type">My long-running AI assistant project</p><h3>Zoro</h3>
+          <p class="project-description">Zoro started as a simple voice-command experiment and has turned into a Windows-first assistant that connects speech, local AI models, and desktop actions. It&#x27;s the project that has taught me the most about integrating systems and dealing with things that break.</p><p class="project-detail">I&#x27;ve worked on wake-word detection, speech recognition, Ollama model routing, desktop commands, voice responses, and the constant debugging needed to make those parts work together. It&#x27;s still a work in progress.</p>
+          <ul class="tech-tags"><li>Python</li><li>Ollama</li><li>Speech recognition</li><li>Windows automation</li></ul>
+          <div class="project-footer"><span class="project-closed">Private working project</span></div></div>
+        </article>
+<article class="project-card project-development reveal" data-kind="development">
+          <div class="project-meta"><span class="project-num">04 / SELECTED WORK</span><span class="project-status">In development / Private repo</span></div>
+          <div class="project-art project-art-sync" aria-hidden="true"><div class="sync-caption">REPOSITORY HEALTH</div><div class="sync-row"><span>main</span><span class="sync-good">● clean</span></div><div class="sync-row"><span>feature / local edits</span><span class="sync-hold">● hold</span></div><div class="sync-foot">Don't overwrite unfinished work.</div></div>
+          <div class="project-body"><p class="project-type">A Windows repository-sync tool</p><h3>GitHub Sync</h3>
+          <p class="project-description">This is an ongoing Windows app project for keeping local GitHub repositories in sync while protecting unfinished local work. The main challenge is deciding when it&#x27;s safe to update files — and when the app should stop and ask for attention.</p><p class="project-detail">The project explores a system-tray interface, Git-aware checks, and a safer approach to automatic updates. It isn&#x27;t publicly released yet.</p>
+          <ul class="tech-tags"><li>Tauri</li><li>Rust</li><li>React</li><li>Git</li></ul>
+          <div class="project-footer"><span class="project-closed">Not publicly released</span></div></div>
+        </article></div>
       </section>
 
-      <section class="section" id="currently-building" aria-labelledby="building-title">
-        <div class="section-inner">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Currently Building</p>
-            <h2 id="building-title">Smaller projects and ideas in progress.</h2>
-            <p>
-              These are not being shown as finished work yet. I am keeping them smaller than
-              Context Titles until they have more complete repos or public previews.
-            </p>
-          </div>
+      <section class="section section-skills" id="skills" aria-labelledby="skills-heading"><div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 03 / What I work with</div><div class="intro-split"><h2 id="skills-heading">Hardware instincts. Software curiosity.</h2><p>I don&#x27;t want a list that makes it sound like I&#x27;ve mastered everything. These are the areas I can work in confidently and the tools I keep using to learn more.</p></div></div><div class="skills-list"><article class="skill-row reveal"><span class="skill-number">01</span><h3>Troubleshooting &amp; hardware</h3><p>Diagnosing PC problems, maintaining and upgrading hardware, setting up devices, and tracing why something isn&#x27;t working.</p></article>
+<article class="skill-row reveal"><span class="skill-number">02</span><h3>Software &amp; development</h3><p>Python, web development, debugging, Git/GitHub workflows, and building tools around problems I run into.</p></article>
+<article class="skill-row reveal"><span class="skill-number">03</span><h3>AI systems &amp; automation</h3><p>Working with local models, speech pipelines, desktop commands, and the tradeoffs between functionality, speed, and reliability.</p></article>
+<article class="skill-row reveal"><span class="skill-number">04</span><h3>Networking fundamentals</h3><p>Connectivity, network concepts, device configuration basics, and continued learning through my IT pathway.</p></article></div></section>
 
-          <div class="building-grid">
-            <article class="building-card">
-              <span class="status-pill">In progress</span>
-              <h3>Zoro</h3>
-              <p>
-                A local AI voice assistant project for voice commands, opening apps, playing
-                music, speaking responses, and eventually connecting to local tools and memory.
-              </p>
-            </article>
+      <section class="section section-leadership" id="leadership" aria-labelledby="leadership-heading"><div class="leadership-layout"><div class="leadership-left reveal"><div class="section-kicker"><span class="line-square"></span> 04 / Beyond the code</div><h2 id="leadership-heading">Good work is rarely done alone.</h2><div class="leadership-caption">TECHNICAL SKILLS ARE MORE USEFUL WHEN SHARED.</div></div><div class="leadership-right reveal"><p class="leadership-main">I enjoy working with classmates, trading ideas, and helping people troubleshoot problems when I can. Explaining an idea to someone else often helps me understand it better, too.</p><p>I am still developing my leadership skills. For me, that means listening, being dependable, and doing the unglamorous work that helps a team make progress.</p><div class="volunteer-strip"><span aria-hidden="true">↗</span><p>I also volunteered with event setup and organization at the YES Summit in Arlington in 2025.</p></div></div></div></section>
 
-            <article class="building-card">
-              <span class="status-pill">Future idea</span>
-              <h3>OpenSync</h3>
-              <p>
-                A project idea I may build out later as part of my interest in practical tools
-                and open-source workflows.
-              </p>
-            </article>
+      <section class="section section-awards" id="achievements" aria-labelledby="awards-heading"><div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 05 / Recognition</div><h2 id="awards-heading">Recognition that pushed me forward.</h2></div><div class="award-grid"><article class="award-card reveal"><div class="award-top"><span class="award-star" aria-hidden="true">✳</span><span>01 / RECOGNITION</span></div><h3>Freshman of the Year — Networking Systems Program</h3><p>Dubiski Career High School · 2026</p></article><article class="award-card reveal"><div class="award-top"><span class="award-star" aria-hidden="true">✳</span><span>02 / COMPETITION</span></div><h3>SkillsUSA Web Design — Regional Bronze Medalist</h3><p>Regional competition · 2026</p></article></div></section>
 
-            <article class="building-card">
-              <span class="status-pill">Future idea</span>
-              <h3>Hermes Obsidian Sidebar</h3>
-              <p>
-                An Obsidian-related idea that may become a sidebar tool after the plan is more
-                complete.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <section class="section section-certs" id="certifications" aria-labelledby="certs-heading"><div class="section-intro reveal"><div class="section-kicker"><span class="line-square"></span> 06 / Learning, formally and informally</div><h2 id="certs-heading">Credentials and what I&#x27;m studying next.</h2></div><div class="certification-grid"><div class="cert-box reveal"><div class="cert-box-top"><span>COMPLETED</span><span class="cert-count">04</span></div><ul><li>CompTIA Tech+</li><li>OSHA 10-Hour General Industry — CareerSafe</li><li>Cyber Safety Awareness Training — CareerSafe</li><li>Interview Skills — CareerSafe</li></ul></div><div class="cert-box current-cert reveal"><div class="cert-box-top"><span>WORKING ON NOW</span><span class="cert-count">→</span></div><p>CompTIA A+ — Core 1 &amp; Core 2 CertMaster Learn coursework</p><span class="current-label"><span class="status-light" aria-hidden="true"></span> IN PROGRESS · NOT YET CERTIFIED</span></div></div></section>
 
-      <section class="section section-band" id="resume" aria-labelledby="resume-title">
-        <div class="section-inner resume-row">
-          <div>
-            <p class="eyebrow">Resume</p>
-            <h2 id="resume-title">A quick look at my experience and certifications.</h2>
-            <p>
-              My resume is available as a PDF for applications, teachers, mentors, and anyone
-              reviewing my work.
-            </p>
-          </div>
-          <a
-            class="button button-primary"
-            href="assets/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open Resume
-          </a>
-        </div>
-      </section>
+      <section class="section goals-section" id="goals" aria-labelledby="goals-heading"><div class="goals-layout"><div class="reveal"><div class="section-kicker"><span class="line-square"></span> 07 / Looking ahead</div><h2 id="goals-heading">The plans are ambitious. That&#x27;s the point.</h2></div><div class="goals-body reveal"><p>I want to earn scholarships that make college affordable, get an IT internship while I&#x27;m still in school, and push myself academically toward graduating as valedictorian. MIT is the school I&#x27;m aiming for. Longer term, I want to start a technology company and work on something with an impact outside of my own projects.</p><span>I know those are goals, not accomplishments. For now, I&#x27;m focused on doing the work that gives me a shot at them.</span></div></div></section>
 
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <div class="section-inner contact-layout">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">The best way to contact me is through email or GitHub.</h2>
-          </div>
+      <section class="section resume-section" id="resume" aria-labelledby="resume-heading"><div class="resume-block reveal"><div><div class="section-kicker"><span class="line-square"></span> 08 / The quick version</div><h2 id="resume-heading">Want the one-page overview?</h2><p>My resume has my education, awards, certifications, volunteer work, and a short overview of Zoro.</p></div><a class="button button-light" href="assets/resume.pdf" target="_blank" rel="noopener">View resume (PDF) <span aria-hidden="true">↗</span></a></div></section>
 
-          <div class="contact-links">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=blakecary2010%40gmail.com&su=Portfolio%20Contact"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Email Me
-            </a>
-            <a
-              href="https://github.com/BlakeC2010"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github.com/BlakeC2010
-            </a>
-          </div>
-        </div>
-      </section>
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="contact-inner reveal"><div class="section-kicker"><span class="line-square"></span> 09 / Get in touch</div><h2 id="contact-heading">Have a question or an idea?</h2><p>I&#x27;m open to hearing from mentors, students, recruiters, and people working on interesting technical projects. Email is the easiest way to reach me.</p><div class="contact-actions"><a class="button button-dark" href="mailto:blakecary2010@gmail.com">Send me an email <span aria-hidden="true">↗</span></a><a href="https://github.com/BlakeC2010" class="inline-action" target="_blank" rel="noopener noreferrer">See my GitHub <span aria-hidden="true">↗</span></a></div><div class="contact-address"><a href="mailto:blakecary2010@gmail.com">blakecary2010@gmail.com</a></div></div></section>
     </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 Blake Cary. Built with HTML, CSS, and JavaScript.</p>
-    </footer>
-  </body>
+    <footer class="site-footer"><div class="footer-brand"><span class="identity-square">b<span>c</span></span><span>Blake Cary<small>Dubiski Career High School · Class of 2029</small></span></div><p>Made to show the work, not just talk about it.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
 </html>
