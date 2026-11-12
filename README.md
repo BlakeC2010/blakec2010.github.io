@@ -38,7 +38,7 @@ Check it on both desktop and phone after major edits. Scroll to test the section
 
 ## How to publish to your existing GitHub Pages site
 
-**This package does not automatically update your live website.** Before replacing it, create a backup branch or copy of your existing `BlakeC2010/blakec2010.github.io` repository.
+**The refreshed portfolio was committed to the existing `BlakeC2010/blakec2010.github.io` GitHub Pages repository on November 12, 2026.** The ZIP is an editable local copy. To publish future changes, rebuild `index.html` and commit the changed files to the repository.
 
 Copy the **contents** of this folder into the *root* of the GitHub Pages repository, preserving these paths:
 
@@ -62,7 +62,7 @@ Commit and push to your GitHub Pages publishing branch. Confirm the live page an
 - **Goals:** MIT, valedictorian, scholarships, and a technology startup are framed as ambitions, not achievements.
 - **Leadership:** The collaboration section is intentionally general; the specific class study-materials story is reserved for interviews.
 - **Photos:** None are used or required.
-- **Contact:** Only your public email and GitHub are published; the website does not expose your phone number, home address, or any private repository credentials.
+- **Contact & privacy:** The page itself shows only your public email and GitHub. The linked resume PDF includes your phone number. For a public portfolio, consider providing a separate resume without your phone number.
 - **Resume:** To use a revised resume later, export the updated Google Doc as PDF and overwrite `assets/resume.pdf` before republishing.
 
 ## Style notes
